@@ -29,13 +29,16 @@ Partial Class Form1
         Me.txtFrom = New System.Windows.Forms.TextBox()
         Me.txtTo = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn1
         '
         Me.Btn1.Font = New System.Drawing.Font("Gloucester MT Extra Condensed", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1.Location = New System.Drawing.Point(293, 274)
+        Me.Btn1.Location = New System.Drawing.Point(293, 311)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(225, 59)
         Me.Btn1.TabIndex = 0
@@ -55,14 +58,14 @@ Partial Class Form1
         '
         'txtFrom
         '
-        Me.txtFrom.Location = New System.Drawing.Point(293, 178)
+        Me.txtFrom.Location = New System.Drawing.Point(293, 221)
         Me.txtFrom.Name = "txtFrom"
         Me.txtFrom.Size = New System.Drawing.Size(225, 20)
         Me.txtFrom.TabIndex = 1
         '
         'txtTo
         '
-        Me.txtTo.Location = New System.Drawing.Point(293, 215)
+        Me.txtTo.Location = New System.Drawing.Point(293, 256)
         Me.txtTo.Name = "txtTo"
         Me.txtTo.Size = New System.Drawing.Size(225, 20)
         Me.txtTo.TabIndex = 3
@@ -75,11 +78,38 @@ Partial Class Form1
         Me.ComboBox1.Size = New System.Drawing.Size(225, 21)
         Me.ComboBox1.TabIndex = 4
         '
+        'txtPrice
+        '
+        Me.txtPrice.Location = New System.Drawing.Point(293, 181)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(225, 20)
+        Me.txtPrice.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(305, 166)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Label1"
+        '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.ToolStrip1.TabIndex = 7
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.txtTo)
         Me.Controls.Add(Me.lblTitle)
@@ -99,4 +129,7 @@ Partial Class Form1
     Friend WithEvents txtFrom As TextBox
     Friend WithEvents txtTo As TextBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ToolStrip1 As ToolStrip
 End Class
