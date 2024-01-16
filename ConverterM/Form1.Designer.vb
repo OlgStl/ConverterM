@@ -23,22 +23,35 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Btn1 = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.txtFrom = New System.Windows.Forms.TextBox()
         Me.txtTo = New System.Windows.Forms.TextBox()
+<<<<<<< HEAD
+        Me.FromM = New System.Windows.Forms.ComboBox()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+=======
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn1
         '
         Me.Btn1.Font = New System.Drawing.Font("Gloucester MT Extra Condensed", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
+        Me.Btn1.Location = New System.Drawing.Point(203, 311)
+=======
         Me.Btn1.Location = New System.Drawing.Point(293, 311)
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(225, 59)
         Me.Btn1.TabIndex = 0
@@ -48,9 +61,10 @@ Partial Class Form1
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.White
         Me.lblTitle.Font = New System.Drawing.Font("Palace Script MT", 72.0!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(278, 50)
+        Me.lblTitle.Location = New System.Drawing.Point(188, 35)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(260, 89)
         Me.lblTitle.TabIndex = 2
@@ -58,25 +72,73 @@ Partial Class Form1
         '
         'txtFrom
         '
+<<<<<<< HEAD
+        Me.txtFrom.Location = New System.Drawing.Point(203, 285)
+=======
         Me.txtFrom.Location = New System.Drawing.Point(293, 221)
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         Me.txtFrom.Name = "txtFrom"
         Me.txtFrom.Size = New System.Drawing.Size(225, 20)
         Me.txtFrom.TabIndex = 1
         '
         'txtTo
         '
+<<<<<<< HEAD
+        Me.txtTo.Location = New System.Drawing.Point(203, 386)
+=======
         Me.txtTo.Location = New System.Drawing.Point(293, 256)
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         Me.txtTo.Name = "txtTo"
         Me.txtTo.Size = New System.Drawing.Size(225, 20)
         Me.txtTo.TabIndex = 3
         '
-        'ComboBox1
+        'FromM
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(293, 142)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(225, 21)
-        Me.ComboBox1.TabIndex = 4
+        Me.FromM.FormattingEnabled = True
+        Me.FromM.Location = New System.Drawing.Point(203, 156)
+        Me.FromM.Name = "FromM"
+        Me.FromM.Size = New System.Drawing.Size(225, 21)
+        Me.FromM.TabIndex = 4
+        '
+        'txtPrice
+        '
+        Me.txtPrice.Location = New System.Drawing.Point(203, 226)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(225, 20)
+        Me.txtPrice.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Label1.Font = New System.Drawing.Font("Playbill", 24.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(259, 190)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(114, 33)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Market Price"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Label2.Font = New System.Drawing.Font("Playbill", 21.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(284, 124)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(47, 29)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "From"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Label4.Font = New System.Drawing.Font("Playbill", 21.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(283, 253)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(55, 29)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Money"
         '
         'txtPrice
         '
@@ -106,17 +168,28 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
+        Me.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(638, 449)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtPrice)
+        Me.Controls.Add(Me.FromM)
+=======
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.ComboBox1)
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         Me.Controls.Add(Me.txtTo)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.txtFrom)
         Me.Controls.Add(Me.Btn1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "00000000000000000000000000000000000000000000"
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -128,8 +201,16 @@ Partial Class Form1
     Friend WithEvents BindingSource1 As BindingSource
     Friend WithEvents txtFrom As TextBox
     Friend WithEvents txtTo As TextBox
+<<<<<<< HEAD
+    Friend WithEvents FromM As ComboBox
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+=======
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents txtPrice As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ToolStrip1 As ToolStrip
+>>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
 End Class
