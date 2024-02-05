@@ -29,29 +29,29 @@ Partial Class Form1
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.txtFrom = New System.Windows.Forms.TextBox()
         Me.txtTo = New System.Windows.Forms.TextBox()
-<<<<<<< HEAD
+
         Me.FromM = New System.Windows.Forms.ComboBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-=======
+
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn1
         '
         Me.Btn1.Font = New System.Drawing.Font("Gloucester MT Extra Condensed", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< HEAD
+
         Me.Btn1.Location = New System.Drawing.Point(203, 311)
-=======
+
         Me.Btn1.Location = New System.Drawing.Point(293, 311)
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(225, 59)
         Me.Btn1.TabIndex = 0
@@ -72,22 +72,20 @@ Partial Class Form1
         '
         'txtFrom
         '
-<<<<<<< HEAD
+
         Me.txtFrom.Location = New System.Drawing.Point(203, 285)
-=======
-        Me.txtFrom.Location = New System.Drawing.Point(293, 221)
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
+
+
         Me.txtFrom.Name = "txtFrom"
         Me.txtFrom.Size = New System.Drawing.Size(225, 20)
         Me.txtFrom.TabIndex = 1
         '
         'txtTo
         '
-<<<<<<< HEAD
+
         Me.txtTo.Location = New System.Drawing.Point(203, 386)
-=======
-        Me.txtTo.Location = New System.Drawing.Point(293, 256)
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
         Me.txtTo.Name = "txtTo"
         Me.txtTo.Size = New System.Drawing.Size(225, 20)
         Me.txtTo.TabIndex = 3
@@ -156,19 +154,12 @@ Partial Class Form1
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Label1"
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(800, 25)
-        Me.ToolStrip1.TabIndex = 7
-        Me.ToolStrip1.Text = "ToolStrip1"
+
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(638, 449)
@@ -177,13 +168,13 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.FromM)
-=======
+
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.ComboBox1)
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
         Me.Controls.Add(Me.txtTo)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.txtFrom)
@@ -201,16 +192,16 @@ Partial Class Form1
     Friend WithEvents BindingSource1 As BindingSource
     Friend WithEvents txtFrom As TextBox
     Friend WithEvents txtTo As TextBox
-<<<<<<< HEAD
+
     Friend WithEvents FromM As ComboBox
     Friend WithEvents txtPrice As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
-=======
+
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents txtPrice As TextBox
-    Friend WithEvents Label1 As Label
+
+
     Friend WithEvents ToolStrip1 As ToolStrip
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
 End Class

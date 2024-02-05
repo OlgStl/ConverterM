@@ -1,20 +1,18 @@
 ﻿Public Class Form1
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
-<<<<<<< HEAD
+
         ' Define the conversion rates
-        Const DollarToPound As Double =
-        Const EuroToPound As Double =
-        Const ZlotyToPound As Double =
-        Const HryvniaToPound As Double =
-        Const LeuToPound As Double = 
+        Const DollarToPound As Double = 1
+        Const EuroToPound As Double = 1
+        Const ZlotyToPound As Double = 1
+        Const HryvniaToPound As Double = 1
+        Const LeuToPound As Double = 1
 
         ' Get the input value
-=======
 
 
 
 
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
         Dim inputValue As Double = Double.Parse(txtFrom.Text)
 
 
@@ -37,10 +35,8 @@
         End Select
 
 
-<<<<<<< HEAD
-        ' Display the converted value
-=======
->>>>>>> 5db9ee842e9e047a124fd68091faadf881a585a9
+
+
         txtTo.Text = convertedValue.ToString("F2") & " £"
     End Sub
 
@@ -52,9 +48,7 @@
 
     End Sub
 
-    Private Sub txtPrice_TextChanged(sender As Object, e As EventArgs) Handles txtPrice.TextChanged
 
-    End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
