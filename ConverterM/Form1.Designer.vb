@@ -141,11 +141,12 @@ Partial Class Form1
         '
         'BtnFetchRates
         '
+        Me.BtnFetchRates.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnFetchRates.Location = New System.Drawing.Point(361, 322)
         Me.BtnFetchRates.Name = "BtnFetchRates"
         Me.BtnFetchRates.Size = New System.Drawing.Size(209, 59)
         Me.BtnFetchRates.TabIndex = 13
-        Me.BtnFetchRates.Text = "Button1"
+        Me.BtnFetchRates.Text = "Show Values"
         Me.BtnFetchRates.UseVisualStyleBackColor = True
         '
         'Form1

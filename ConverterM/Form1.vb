@@ -120,4 +120,8 @@ Public Class Form1
     Private Sub FromM_SelectedIndexChanged(sender As Object, e As EventArgs) Handles FromM.SelectedIndexChanged
 
     End Sub
+
+    Private Sub BtnFetchRates_Click(sender As Object, e As EventArgs) Handles BtnFetchRates.Click
+
+    End Sub
 End Class
