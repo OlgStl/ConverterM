@@ -36,18 +36,20 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.BtnFetchRates = New System.Windows.Forms.Button()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn1
         '
         Me.Btn1.Font = New System.Drawing.Font("Gloucester MT Extra Condensed", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1.Location = New System.Drawing.Point(234, 322)
+        Me.Btn1.Location = New System.Drawing.Point(85, 322)
         Me.Btn1.Name = "Btn1"
         Me.Btn1.Size = New System.Drawing.Size(225, 59)
         Me.Btn1.TabIndex = 0
         Me.Btn1.Text = "Convert"
         Me.Btn1.UseVisualStyleBackColor = True
+        Me.Btn1.Visible = False
         '
         'lblTitle
         '
@@ -97,9 +99,9 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Playbill", 24.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(305, 180)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 33)
+        Me.Label1.Size = New System.Drawing.Size(126, 33)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Exchange Rate"
         '
         'Label2
         '
@@ -137,6 +139,15 @@ Partial Class Form1
         Me.ToolStrip1.Size = New System.Drawing.Size(800, 25)
         Me.ToolStrip1.TabIndex = 11
         '
+        'BtnFetchRates
+        '
+        Me.BtnFetchRates.Location = New System.Drawing.Point(361, 322)
+        Me.BtnFetchRates.Name = "BtnFetchRates"
+        Me.BtnFetchRates.Size = New System.Drawing.Size(209, 59)
+        Me.BtnFetchRates.TabIndex = 13
+        Me.BtnFetchRates.Text = "Button1"
+        Me.BtnFetchRates.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -144,6 +155,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtnFetchRates)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.FromM)
@@ -179,5 +191,5 @@ Partial Class Form1
 
 
     Friend WithEvents ToolStrip1 As ToolStrip
-
+    Friend WithEvents BtnFetchRates As Button
 End Class
